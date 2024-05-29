@@ -1,20 +1,29 @@
 import AppName from "./Components/AppName";
 import AddTodo from "./Components/AddTodo";
-// import TodoItem1 from "./Components/TodoItem1";
-// import TodoItem2 from "./Components/TodoItem2";    You can delete these 2 after creating TodoItem.jsx, bcoz TodoItem is handling both data
-import TodoItem from "./Components/TodoItem";
+import TodoItems from "./Components/TodoItems";
 import "./App.css";
 
 function App() {
+  const todoItems = [
+    {
+      name: "Buy1 Milk",
+      dueDate: "28/05/2024"
+    },
+    {
+      name: "Go to College",
+      dueDate: "28/05/2024"
+    },
+    {
+      name: "Go to College2",
+      dueDate: "28/05/2024"
+    }
+  ];
+
   return (
     <center className="todo-container">
       <AppName />
-      <div className="items-container">
         <AddTodo></AddTodo>
-        <TodoItem todoDate='28/05/2024' todoName="Buy Milk1"></TodoItem>
-        <TodoItem todoDate='298/05/2024' todoName="Buy Milk12s"></TodoItem>
-        <TodoItem todoDate='24/05/2024' todoName="Go to College"></TodoItem>
-      </div>
+        <TodoItems todoItems={todoItems}></TodoItems>
     </center>
   );
 }

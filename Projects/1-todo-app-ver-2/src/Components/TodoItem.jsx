@@ -1,3 +1,5 @@
+// TodoItem is handling both TodoItem1 & TodoItem2 data.
+
 function TodoItem({todoName, todoDate}) {
   return (
     <div className="container">

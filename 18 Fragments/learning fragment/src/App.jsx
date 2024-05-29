@@ -5,12 +5,11 @@ import ErrorMsg from "./assets/components/ErrorMsg";
 
 function App() {
 
-  // let foodItems = []
   let foodItems = ["Dal", "Kiwi", "Grapes", "Green Vegetables", "Fruits", "Juices", "Salad"];
 
   return (
     <>
-      <h1>Healthy Foods</h1>
+      <h1 className="food-heading">Healthy Foods</h1>
       <ErrorMsg items = {foodItems}></ErrorMsg>
       <FoodItems items = {foodItems}></FoodItems>
     </>
