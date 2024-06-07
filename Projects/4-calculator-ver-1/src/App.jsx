@@ -9,7 +9,6 @@ function App() {
       <div className={styles.calculator}>
         <Display></Display>
         <ButtonsContainer></ButtonsContainer>
-        
       </div>
     </>
   )
