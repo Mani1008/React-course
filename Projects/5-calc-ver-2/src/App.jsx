@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function App() {
 
-  const [calVal, setCalVal] = useState('')
+  const [calVal, setCalVal] = useState('sdfs')
   const onButtonClick = (buttonText) => {
 
     if (buttonText === "C") {
